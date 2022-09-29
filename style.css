@@ -253,7 +253,7 @@ nav .search-icon {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -621,7 +621,7 @@ nav .search-icon {
 }
 .footer_text {
   margin-left: 8%;
-  padding: 6% 0%;
+  padding: 6% 4%;
   justify-content: space-between;
   display: flex;
   gap: 60px;
