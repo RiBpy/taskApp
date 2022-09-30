@@ -14,6 +14,9 @@ body {
 .explore_btn {
   cursor: pointer;
   padding: 6px 15px;
+  background: transparent;
+  border: 1px solid #272727;
+  border-radius: 5px;
 }
 nav {
   background: white;
@@ -251,29 +254,12 @@ nav .search-icon {
   vertical-align: middle;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
 }
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-.slideshow-container .right_section img {
-  width: 100%;
-}
-.slideshow-container .right_section p {
-  color: #717171;
-}
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -282,7 +268,30 @@ nav .search-icon {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+.slideshow-container .slider_content {
+  background-image: url(./images/homeTopBg.png);
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.slideshow-container .right_section img {
+  width: 100%;
+}
+.slideshow-container .right_section p {
+  color: #717171;
+}
+.slideshow-container .slider_content .prada {
+  padding: 2% 10%;
+}
+.slideshow-container .slider_content p {
+  color: #272727;
+  font-size: 24px;
+  font-weight: 600;
+}
 .slide_dot {
   cursor: pointer;
   height: 15px;
@@ -298,9 +307,7 @@ nav .search-icon {
 .mySlides .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
-.fade {
+.slideshow-container.fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -359,8 +366,9 @@ nav .search-icon {
   width: 100%;
   height: 100%;
 }
-.trending:nth-child(4) {
-  margin-right: 20px;
+.trending .trending_last {
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
 /* trending section end */
 /* deals of the day start */
@@ -473,6 +481,7 @@ nav .search-icon {
   height: 100%;
 }
 .all_category {
+  padding: 10px 20px;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -537,8 +546,9 @@ nav .search-icon {
 
 /* reviews start */
 .review_section {
-  margin: 30px 10px;
+  padding: 1% 2%;
   position: relative;
+  height: 100%;
 }
 
 .review_container {
@@ -614,39 +624,66 @@ nav .search-icon {
 }
 .footer_logo .logo {
   width: 76px;
+  height: 100%;
 }
 .footer_logo .name {
   width: 243px;
-  height: 79px;
+  height: 100%;
 }
 .footer_text {
-  margin-left: 8%;
+  margin-left: 6%;
   padding: 6% 4%;
   justify-content: space-between;
   display: flex;
   gap: 60px;
 }
 @media (max-width: 1040px) {
+  .footer_logo .logo {
+    width: 56px;
+  }
+  .footer_logo .name {
+    width: 180px;
+  }
   .footer_text {
-    padding: 10% 0;
+    margin-left: 4%;
+    padding: 10% 2%;
     display: flex;
     gap: 40px;
   }
 }
 @media (max-width: 880px) {
+  .footer_logo .logo {
+    width: 36px;
+  }
+  .footer_logo .name {
+    width: 120px;
+  }
   .footer_text {
-    padding: 10% 0;
+    margin-left: 2%;
+    padding: 10% 2%;
     display: flex;
     gap: 10px;
   }
 }
 @media (max-width: 718px) {
   .footer_text {
+    padding: 10% 2%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
   }
 }
+@media (max-width: 350px) {
+  .footer_logo {
+    padding: 5%;
+  }
+  .footer_text {
+    padding: 4% 2%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .footer_text h5 {
   padding: 10px 0;
   color: white;
@@ -674,20 +711,26 @@ nav .search-icon {
 }
 .input_box {
   position: relative;
+  margin: 2% 0;
 }
 .footer .stay_in_touch .fa-envelope {
   position: absolute;
   color: white;
-  top: 22%;
-  left: 4%;
+  top: 26%;
+  left: 2%;
 }
 .footer_last {
   display: flex;
   align-items: center;
-  color: white;
+  flex-wrap: wrap;
+  gap: 15px;
   justify-content: space-between;
-  padding: 2% 20%;
+  padding: 2% 22%;
   margin: 0m auto;
+}
+.footer_last a {
+  color: white;
+  text-decoration: none;
 }
 .footer_last .icons {
   cursor: pointer;
@@ -701,5 +744,15 @@ nav .search-icon {
   align-items: center;
   justify-content: center;
   padding: 2% 4%;
+}
+@media (max-width: 789px) {
+  .footer_last .icons {
+    margin-left: 0;
+  }
+}
+@media (max-width: 466px) {
+  .footer_last {
+    padding: 4%;
+  }
 }
 /* footer end */

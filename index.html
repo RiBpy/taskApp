@@ -48,6 +48,7 @@
       </div>
     </nav>
     <!-- Nav section end -->
+
     <!--Offer section start-->
     <div class="offer">
       <p class="offer_text">
@@ -57,6 +58,7 @@
       </p>
     </div>
     <!-- Offer section end -->
+
     <!-- slider section start-->
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -64,29 +66,14 @@
           <div class="img" style="width: 50%">
             <img src="./images/homeTop.png" style="width: 100%" />
           </div>
-          <div
-            class="content"
-            style="
-              background-image: url(./images/homeTopBg.png);
-              width: 50%;
-              text-align: center;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            "
-          >
-            <div class="right_section">
-              <span style="font-size: 52px"
-                ><img src="./images/prada.png" class="prada" alt=""
-              /></span>
-              <br />
-              <p style="font-size: 24px">
-                Big Fashion Festival <br />50%-60% off
-              </p>
-              <button class="export_btn" style="padding: 4px 10px">
-                Explore
-              </button>
-            </div>
+          <div class="slider_content">
+            <span style="font-size: 52px"
+              ><img src="./images/prada.png" class="prada" alt=""
+            /></span>
+            <br />
+            <p class="slider_p">Big Fashion Festival</p>
+            <p class="slider_p">50%-80% off</p>
+            <button class="explore_btn">Explore</button>
           </div>
         </div>
       </div>
@@ -94,26 +81,32 @@
       <div class="mySlides fade">
         <div class="inside" style="display: flex">
           <div class="img" style="width: 50%">
-            <img src="./images/homeTop.png" style="width: 100%" />
+            <img src="./images/trending/trending1.png" style="width: 100%" />
           </div>
-          <div
-            class="content"
-            style="
-              background-image: url(./images/homeTopBg.png);
-              width: 50%;
-              text-align: center;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            "
-          >
-            <div>
-              <span style="font-size: 70px">PRADA</span> <br />
-              <p style="font-size: 24px">
-                Big Fashion Festival <br />30%-45% off
-              </p>
-              <button style="padding: 5px 15px">Explore</button>
-            </div>
+          <div class="slider_content">
+            <span style="font-size: 52px"
+              ><img src="./images/foreverSm.png" class="prada" alt=""
+            /></span>
+            <br />
+            <p class="slider_p">Big Occasion</p>
+            <p class="slider_p">50%-60% off</p>
+            <button class="explore_btn">Explore</button>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="inside" style="display: flex">
+          <div class="img" style="width: 50%">
+            <img src="./images/trending/trending4.png" style="width: 100%" />
+          </div>
+          <div class="slider_content">
+            <span style="font-size: 52px"
+              ><img src="./images/Globex.png" class="prada" alt=""
+            /></span>
+            <br />
+            <p class="slider_p">Big Occasion</p>
+            <p class="slider_p">50%-60% off</p>
+            <button class="explore_btn">Explore</button>
           </div>
         </div>
       </div>
@@ -124,8 +117,11 @@
       <span class="slide_dot" onclick="currentSlide(1)"></span>
       <span class="slide_dot" onclick="currentSlide(2)"></span>
       <span class="slide_dot" onclick="currentSlide(3)"></span>
+      <span class="slide_dot" onclick="currentSlide(4)"></span>
+      <span class="slide_dot" onclick="currentSlide(5)"></span>
     </div>
     <!-- slider section end -->
+
     <!-- trending section start -->
     <section class="trending_section">
       <h2 class="trending_header">Trending Now</h2>
@@ -170,7 +166,11 @@
           </p>
         </div>
         <div class="trending_single">
-          <img src="./images/trending/trending4.png" alt="" />
+          <img
+            src="./images/trending/trending4.png"
+            class="trending_last"
+            alt=""
+          />
           <h3>Womens Denim Jacket</h3>
           <p>
             <span><small>Brand Name</small></span>
@@ -264,6 +264,7 @@
       </div>
     </section>
     <!-- forever 21 end -->
+
     <!-- Shop By Categories start -->
     <section class="categories">
       <div class="all_category">
@@ -336,9 +337,10 @@
       </div>
     </section>
     <!-- Shop By Categories end -->
+
     <!-- review start -->
     <section class="review_section">
-      <h4>What Our Customer Says</h4>
+      <h2>What Our Customer Says</h2>
       <div class="review_container review_active">
         <div class="review">
           <div class="user">
@@ -374,12 +376,11 @@
               <span>4.4</span>
             </div>
           </div>
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odit
-            pariatur, deleniti possimus ea velit sit iure quaerat quidem dolorum
-            rerum sapiente! Magni eveniet est culpa aut! Esse, animi laboriosam
-            optio dolorem, facere quaerat quo ipsam quisquam hic labore
-            deleniti!
+          <p class="review_text">
+            This handy tool helps you create dummy text for all your layout
+            needs. We are gradually adding new functionality and we welcome your
+            suggestions and feedback. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Facilis, optio?
           </p>
         </div>
       </div>
@@ -396,7 +397,7 @@
               <span>4.4</span>
             </div>
           </div>
-          <p class="text">
+          <p class="review_text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odit
             pariatur, deleniti possimus ea velit sit iure quaerat quidem dolorum
             rerum sapiente! Magni eveniet est culpa aut! Esse, animi laboriosam
@@ -409,6 +410,7 @@
       <i id="right" class="fas fa-chevron-right" onclick="next()"></i>
     </section>
     <!-- review end -->
+
     <!-- footer section start -->
     <footer class="footer">
       <div class="footer_logo">
@@ -482,13 +484,13 @@
       </div>
       <hr class="hr" />
       <div class="footer_last">
-        <p>Terms & Condition</p>
-        <p>Privacy Policy</p>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Privacy Policy</a>
         <div class="icons">
-          <img src="./images/socialIcons/fb.png" class="fb" alt="" />
-          <img src="./images/socialIcons/intsa.png" alt="" />
-          <img src="./images/socialIcons/wa.png" alt="" />
-          <img src="./images/socialIcons/twitter.png" alt="" />
+         <a href="#"></a> <img src="./images/socialIcons/fb.png" class="fb" alt="" /></a>
+         <a href="#"></a> <img src="./images/socialIcons/intsa.png" alt="" /></a>
+         <a href="#"></a> <img src="./images/socialIcons/wa.png" alt="" /></a>
+         <a href="#"></a> <img src="./images/socialIcons/twitter.png" alt="" /></a>
         </div>
       </div>
     </footer>
