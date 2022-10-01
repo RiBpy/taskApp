@@ -52,6 +52,9 @@ nav .nav-items li a {
 }
 nav .nav-items li a:hover {
   color: #002482;
+  font-size: 20px;
+  font-weight: solid;
+  transition: 0.3s all ease-in-out;
 }
 nav form {
   display: flex;
@@ -116,7 +119,7 @@ nav .search-icon {
     position: fixed;
     z-index: 99;
     top: 70px;
-    width: 70%;
+    width: 72%;
     left: -100%;
     height: 100%;
     padding: 10px 50px 0 50px;
@@ -242,8 +245,23 @@ nav .search-icon {
   color: #002482;
 }
 .offer .fa-times {
+  cursor: pointer;
   margin-left: 20px;
 }
+.removeOffer {
+  animation: offer-animation-out 0.5s ease-in;
+}
+@keyframes offer-animation-out {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
+
 /* offer section end */
 
 /* slider section */
@@ -278,10 +296,10 @@ nav .search-icon {
   align-items: center;
   justify-content: center;
 }
-.slideshow-container .right_section img {
+.slideshow-container img {
   width: 100%;
 }
-.slideshow-container .right_section p {
+.slideshow-container .slider_content p {
   color: #717171;
 }
 .slideshow-container .slider_content .prada {
@@ -321,14 +339,26 @@ nav .search-icon {
   }
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {
+  .mySlides .text {
     font-size: 11px;
   }
 }
+@media (max-width: 758px) {
+  .slideshow-container .slider_content {
+    gap: 6px;
+  }
+  .slideshow-container .slider_content .prada {
+    padding: 0% 6%;
+  }
+}
+@media (max-width: 501px) {
+  .slideshow-container .slider_content .slider_p_text {
+    display: none;
+  }
+}
 /* end of slider section */
-/* trending section start */
+/* trending now section start */
 .trending_section {
   width: 100%;
   height: 100%;
@@ -369,6 +399,17 @@ nav .search-icon {
 .trending .trending_last {
   border-top-left-radius: 3%;
   border-top-right-radius: 3%;
+}
+@media (max-width: 672px) {
+  .trending_single p {
+    font-size: 12px;
+  }
+  .trending_single .discount {
+    font-size: 12px;
+  }
+  .trending .rating {
+    margin-left: 6px;
+  }
 }
 /* trending section end */
 /* deals of the day start */
@@ -437,6 +478,12 @@ nav .search-icon {
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
+.offer_details img {
+  width: 100%;
+}
+.offer_details .logo {
+  width: 70%;
 }
 /* end of trending offer */
 /* forever 21 start */

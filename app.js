@@ -19,6 +19,16 @@
            cancelBtn.style.color = "#002482";
          }
 
+//invitation offer section
+const offerDiv=document.querySelector(".offer")
+const offerCrossBtn=document.querySelector(".crossOffer")
+  offerCrossBtn.addEventListener("click",()=>{
+    offerDiv.classList.add("removeOffer");
+    offerDiv.style.display="none";
+    
+})
+
+
 // slide show
 let slideIndex = 1;
 showSlides(slideIndex);
