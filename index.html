@@ -122,7 +122,7 @@
     </div>
     <!-- slider section end -->
 
-    <!-- trending section start -->
+    <!-- trending now section start -->
     <section class="trending_section">
       <h2 class="trending_header">Trending Now</h2>
       <div class="trending">
@@ -184,9 +184,9 @@
         </div>
       </div>
     </section>
-    <!-- trending section end -->
+    <!-- trending now section end -->
 
-    <!-- dod section start -->
+    <!-- deals of the day section start -->
     <section class="dod_section">
       <h2 class="dod_header">Deals of the Day</h2>
       <div class="dod">
@@ -220,33 +220,61 @@
         </div>
       </div>
     </section>
-    <!-- dod section end -->
+    <!-- deals of the day section end -->
 
     <!-- trending offers start -->
     <section class="trending_offer">
       <h2 class="offer_header">Trending Offer</h2>
-      <div class="offer">
-        <div class="offer_single">
-          <div class="offer_img">
-            <img src="./images/trendingOffer1.png" class="img1" alt="" />
+      <div class="offer_container active_offer">
+        <div class="offer">
+          <div class="offer_single">
+            <div class="offer_img">
+              <img src="./images/trendingOffer1.png" class="img1" alt="" />
+            </div>
+            <div class="offer_details">
+              <img src="./images/dod/levise.png" class="logo" alt="" />
+              <h2>Min 60% off</h2>
+              <button class="explore_btn">Explore</button>
+            </div>
           </div>
-          <div class="offer_details">
-            <img src="./images/dod/levise.png" class="logo" alt="" />
-            <h2>Min 60% off</h2>
-            <button class="explore_btn">Explore</button>
-          </div>
-        </div>
-        <div class="offer_single">
-          <div class="offer_img">
-            <img src="./images/trendingOffer2.png" class="img2" alt="" />
-          </div>
-          <div class="offer_details">
-            <img src="./images/foreverSm.png" class="logo" alt="" />
-            <h2>Min 60% off</h2>
-            <button class="explore_btn">Explore</button>
+          <div class="offer_single">
+            <div class="offer_img">
+              <img src="./images/trendingOffer2.png" class="img2" alt="" />
+            </div>
+            <div class="offer_details">
+              <img src="./images/foreverSm.png" class="logo" alt="" />
+              <h2>Min 60% off</h2>
+              <button class="explore_btn">Explore</button>
+            </div>
           </div>
         </div>
       </div>
+      <div class="offer_container">
+        <div class="offer ">
+          <div class="offer_single">
+            <div class="offer_img">
+              <img src="./images/trendingOffer2.png" class="img1" alt="" />
+            </div>
+            <div class="offer_details">
+              <img src="./images/foreverSm.png" class="logo" alt="" />
+              <h2>Min 30% off</h2>
+              <button class="explore_btn">Explore</button>
+            </div>
+          </div>
+          <div class="offer_single">
+            <div class="offer_img">
+              <img src="./images/trendingOffer1.png" class="img2" alt="" />
+            </div>
+            <div class="offer_details">
+              <img src="./images/dod/levise.png" class="logo" alt="" />
+              <h2>Min 40% off</h2>
+              <button class="explore_btn">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i id="left" class="fas fa-chevron-left" onclick="nextOffer()"></i>
+      <i id="right" class="fas fa-chevron-right" onclick="prevOffer()"></i>
     </section>
     <!-- trending offers end -->
 

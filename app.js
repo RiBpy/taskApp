@@ -23,7 +23,6 @@
 const offerDiv=document.querySelector(".offer")
 const offerCrossBtn=document.querySelector(".crossOffer")
   offerCrossBtn.addEventListener("click",()=>{
-    offerDiv.classList.add("removeOffer");
     offerDiv.style.display="none";
     
 })
@@ -57,6 +56,20 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 // slide show end
+
+//trending offer section
+const trendingOffer=document.querySelectorAll('.offer_container')
+let ind=0;
+let nextOffer=()=>{
+  trendingOffer[ind].classList.remove("active_offer")
+  ind=(ind+1)%trendingOffer.length;
+  trendingOffer[ind].classList.add("active_offer")
+}
+let prevOffer=()=>{
+  trendingOffer[ind].classList.remove("active_offer")
+  ind=(ind-1+trendingOffer.length)%trendingOffer.length;
+  trendingOffer[ind].classList.add("active_offer")
+}
 
 // reviews 
 
